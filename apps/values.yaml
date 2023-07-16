@@ -1,0 +1,6 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/KalyanReddy932/argo.git
+    targetRevision: HEAD
