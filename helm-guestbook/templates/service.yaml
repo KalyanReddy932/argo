@@ -10,22 +10,3 @@ spec:
     - protocol: TCP
       port: {{.Values.service.port}}
       targetPort: 80
-
-# /*
-# #now after wrting chart.yaml , deployment.yaml and service.yaml
-# #execute in chart.yaml dir , 
-# helm install nginx .
-# #nginx is the name of the helm chart
-
-# #update the ports: 80 with {{.values.service.port}}
-# helm list
-
-# #to apply yaml changes
-# helm upgrade nginx .
-
-# #to rollback to revision 1
-# helm rollback nginx 1
-
-# #delete
-# helm delete nginx
-# */
