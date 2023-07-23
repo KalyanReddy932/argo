@@ -1,0 +1,5 @@
+deployment:
+  replicaCount: 3
+  imageVersion: stable-alpine3.17-slim
+service:
+  port: 80
