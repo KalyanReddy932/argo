@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  replicas: {{.Values.deployment.replicaCount}}
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: "nginx:{{.Values.deployment.imageVersion}}"
+        ports:
+        - containerPort: 80
+
+# /*
+# In this deployment file   replicas: 1 , image: nginx:1.7.9 are need to be changed on different senarios
+# so we can parameterize them using helm with simple place holders {{.values.deployment.replicaCount}}
+# and you have to create a values.yaml with content replicaCount some value near chart.yaml location
+# similarly for image: nginx:1.7.9 , create {{.values.deployment.imageVersion}}
+
+# */

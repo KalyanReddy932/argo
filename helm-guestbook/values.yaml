@@ -1,0 +1,8 @@
+deployment:
+  replicaCount: 2
+  imageVersion: 1.7.9
+service:
+  port: 80
+
+# You can overwrite values.yaml at run time by creating new file with new values , use --values or -f
+# helm upgrade nginx . --values /tmp/values_new.yaml
