@@ -10,6 +10,10 @@ spec:
     namespace: new-namespace
     server: {{ .Values.spec.destination.server }}
   project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
   source:
     path: helm-guestbook3
     repoURL: {{ .Values.spec.source.repoURL }}
