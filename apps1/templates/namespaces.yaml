@@ -1,13 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-<<<<<<< HEAD
   name: new-namespace
-=======
-  name: helm-guestbook1
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: helm-guestbook
->>>>>>> parent of 4bd3305 (apps git mod5)

@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: helm-guestbook1
-  namespace: argocd
+  namespace: new-namespace
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: new-namespace
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: helm1
   source:
     path: helm-guestbook1
     repoURL: {{ .Values.spec.source.repoURL }}
