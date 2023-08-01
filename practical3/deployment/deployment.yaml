@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: kalyanreddy932/sample_web_ubun
+      - name: centos
+        image: kalyanreddy932/sample_web_cent7
         ports:
         - containerPort: 80
