@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx2
+  name: centos
   labels:
-    app: nginx
+    app: centos
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: centos
   template:
     metadata:
       labels:
-        app: nginx
+        app: centos
     spec:
       containers:
       - name: centos
