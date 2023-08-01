@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: centos
+  name: ubuntu
   labels:
-    app: centos
+    app: ubuntu
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: centos
+      app: ubuntu
   template:
     metadata:
       labels:
-        app: centos
+        app: ubuntu
     spec:
       containers:
-      - name: centos
-        image: kalyanreddy932/sample_web_cent7
+      - name: ubuntu
+        image: kalyanreddy932/sample_web_ubun
         ports:
         - containerPort: 80
