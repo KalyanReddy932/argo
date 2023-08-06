@@ -1,5 +1,5 @@
 apiVersion: v1     #The chart API version (required)
-name: helm1-helmcharts       #The name of the chart (required)
+name: helm11      #The name of the chart (required)
 version: 1.0.0     #A SemVer 2 version (required)
 description: This is to understand helm through nginx #A single-sentence description of this project (optional)
 appVersion: 10.0.0  #(for our reference) The version of the app that this contains (optional). Needn't be SemVer. Quotes recommended.
